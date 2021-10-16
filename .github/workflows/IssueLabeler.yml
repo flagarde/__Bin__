@@ -1,4 +1,10 @@
-on: issues
+on:
+  issues:
+    types: [labeled, unlabeled]
+  push:
+    paths:
+      - '.github/labels.json'
+    
 name: Create Default Labels
 jobs:
   labels:
