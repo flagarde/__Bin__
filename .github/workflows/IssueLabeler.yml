@@ -17,3 +17,14 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           delete: true # will delete any labels that aren't in the .github/labels.json (this is set to false by default) 
+      - name: Load .env file
+        uses: xom9ikk/dotenv@v1.0.2
+        with:
+          path: custom/path/to/folder/with/env
+          mode: development
+
+      - name: Some other action
+        run: |
+          echo "Variable 1: ${{ env.VARIABLE_1 }}"
+          echo "Variable 2: ${{ env.VARIABLE_2 }}"
+          echo "Variable 3: ${{ env.VARIABLE_3 }}"
