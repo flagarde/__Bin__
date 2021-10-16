@@ -24,6 +24,6 @@ jobs:
 
       - name: Some other action
         run: |
-          echo "Variable 1: ${{ env.TOTO }}"
-          echo "Variable 2: ${{ env.VARIABLE_2 }}"
-          echo "Variable 3: ${{ env.VARIABLE_3 }}"
+          echo "Variable 1: ${{ env.DB_HOST }}"
+          echo "Variable 2: ${{ env.DB_USER }}"
+          echo "Variable 3: ${{ env.DB_PASS }}"
