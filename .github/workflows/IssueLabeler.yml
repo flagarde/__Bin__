@@ -12,11 +12,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@1.0.0
+          submodules:`recursive`
+        
       - uses: lannonbr/issue-label-manager-action@3.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          delete: true # will delete any labels that aren't in the .github/labels.json (this is set to false by default) 
+          delete: true # will delete any labels that aren't in the .github/labels.json (this is set to false by default)
+      
       - name: Load .env file
         uses: xom9ikk/dotenv@v1.0.2
         with:
