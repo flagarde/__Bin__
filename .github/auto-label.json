@@ -1,8 +1,9 @@
 {
-  "rules": {
-    "frontend": ["*.js", "*.css", "*.html"],
-    "backend": ["app/", "*.rb"],
-    "ci": ".circleci",
+  "rules":
+  {
+    "ci": [".github/workflows", "*.yml"],
+    "documentation": ["docs/", "*"],
+    "img": ["*.jpg","*.png"],
     "readme": "*.md"
   }
 }
