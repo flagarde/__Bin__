@@ -23,7 +23,7 @@ jobs:
           delete: true # will delete any labels that aren't in the .github/labels.json (this is set to false by default)
 
       - name: Load .env file
-        uses: xom9ikk/dotenv@v1.0.2
+        uses: xom9ikk/dotenv@v2
         with:
           path: .github
 
