@@ -19,6 +19,8 @@ jobs:
       fail-fast: false
 
     steps:
+      - name: ⬇️ Install git & CMake
+        run: apk add tar
       - name: Setup CMake
         uses: lukka/get-cmake@latest
         with:
