@@ -14,7 +14,7 @@ jobs:
   alpine:
     runs-on: ubuntu-latest
     name: alpine
-    container: flagarde/ci-ubuntu-gcc-${{ matrix.version }}-x86_64:latest
+    container: alpine:latest
     strategy:
       fail-fast: false
 
