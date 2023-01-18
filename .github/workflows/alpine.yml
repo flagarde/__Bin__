@@ -19,8 +19,11 @@ jobs:
       fail-fast: false
 
     steps:
-      - name: ⬇️ Install git & CMake
-        run: apk add cmake
+      - name: Setup CMake
+        uses: lukka/get-cmake@latest
+        with:
+          cmakeVersion: "^3.25.1"
+          ninjaVersion: "^1.11.1"
       - name: 📥 Checkout
         uses: actions/checkout@v3
         with:
