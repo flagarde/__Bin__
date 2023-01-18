@@ -20,7 +20,7 @@ jobs:
 
     steps:
       - name: ⬇️ Install CMake
-        run: apk add cmake ninja clang
+        run: apk add cmake ninja clang binutils
       - name: 📥 Checkout
         uses: actions/checkout@v3
         with:
