@@ -22,7 +22,7 @@ jobs:
       - name: ⬇️ Install CMake
         run: apk add cmake ninja g++ binutils
       - name: 📥 Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3.3.0
         with:
           fetch-depth: 0
       - name: 📂 Load .env file
