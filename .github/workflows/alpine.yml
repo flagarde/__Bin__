@@ -27,7 +27,7 @@ jobs:
           fetch-depth: 0
       - name: 📂 Load .env file
         if: hashFiles('.github/workflows/.env') != ''
-        uses: xom9ikk/dotenv@v2
+        uses: xom9ikk/dotenv@v2.1.1
         with:
           path: .github/workflows
       - name: 🔧 Configure
